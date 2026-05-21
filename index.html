@@ -9,20 +9,38 @@
 <body>
     <main>
         <script src="script.js"></script>
-        <input type="text" name="Nombre" id="Nombre" required>
-        <input type="number" min="0" name="Edad" id="Edad" required>
-        <input type="number" min="0" max="10" name="Promedio de inglés en 1er año" id="Prom1" required>
-        <input type="number" min="0" max="10" name="Promedio de inglés en 2do año" id="Prom2" required>
-        <select name="temas_aprobados" id="temas_aprobados" required>
-            <option value="listening">Listening</option>
-            <option value="writing">Writing</option>
-            <option value="ambos">Ambos</option>
-        </select>
         <div>
-            <label for="desea-campamento">Desea ir al campamento?</label>
-            <input type="checkbox" id="desea-campamento" name="desea_campamento">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" required>
         </div>
-        <button id="enviar">Enviar</button>
+        <div>
+            <label for="Edad">Edad:</label>
+            <input type="number" min="0" name="Edad" id="Edad" required>
+        </div>
+        <div>
+            <label for="Prom1">Promedio de inglés en 1er año:</label>
+            <input type="number" min="0" max="10" name="Promedio de inglés en 1er año" id="Prom1" required>
+        </div>
+        <div>
+            <label for="Prom2">Promedio de inglés en 2do año:</label>
+            <input type="number" min="0" max="10" name="Promedio de inglés en 2do año" id="Prom2" required>
+        </div>
+        <div>
+            <label for="temas_aprobados">Temas aprobados:</label>
+            <select name="temas_aprobados" id="temas_aprobados" required>
+                <option value="listening">Listening</option>
+                <option value="writing">Writing</option>
+                <option value="ambos">Ambos</option>
+            </select>
+        </div>
+        <div>
+            <label for="asiste">Desea ir al campamento?</label>
+            <input type="checkbox" id="asiste" name="Va al campamento" value="si">
+        </div>
+        <div>
+            <button type="button" onclick="Inscribir()">Inscribirse</button>
+        </div>
+        <div id="resultado"></div>
     </main>
 </body>
 </html>
